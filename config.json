@@ -1,0 +1,15 @@
+{
+    "port": 8000,
+    "location": "/",
+    "dataDir": "data",
+    "page": {
+        "index": {
+            "title": "简陋分数查询",
+            "label": "学号",
+            "inputType": "number"
+        },
+        "query": {
+            "title": "查询结果"
+        }
+    }
+}

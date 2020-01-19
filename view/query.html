@@ -1,0 +1,24 @@
+{% extends "parent.html" %}
+{% block head %}
+{{ super() }}
+<style>
+    table {
+        font-family: monospace;
+    }
+</style>
+{%- endblock %}
+{% block main -%}
+{% for filename, file in data %}
+<h2>在 <code>{{ filename }}</code> 中{% if not file %}没有{% endif %}找到结果</h2>
+{% if file -%}
+<table>
+    {%- for key, value in file %}
+    <tr>
+        <td>{{ key }}</td>
+        <td>{{ value }}</td>
+    </tr>
+    {%- endfor %}
+</table>
+{% endif -%}
+{% endfor -%}
+{% endblock %}

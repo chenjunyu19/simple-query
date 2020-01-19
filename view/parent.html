@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    {% block head -%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+    {%- endblock %}
+</head>
+
+<body>
+    {% block body -%}
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <p>由 <a href="https://koajs.com/" target="_blank" rel="noopener">Koa</a> 强力驱动。</p>
+    </footer>
+    {%- endblock %}
+</body>
+
+</html>

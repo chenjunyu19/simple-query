@@ -1,0 +1,23 @@
+{
+  "name": "simple-query",
+  "version": "1.0.0",
+  "description": "A simple query service based on Koa.",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-nunjucks-async": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenjunyu19/simple-query.git"
+  },
+  "author": "chenjunyu19 <1335546814@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenjunyu19/simple-query/issues"
+  },
+  "homepage": "https://github.com/chenjunyu19/simple-query#readme"
+}
